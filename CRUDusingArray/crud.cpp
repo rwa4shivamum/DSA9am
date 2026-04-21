@@ -19,16 +19,17 @@ void update(int arr[], int pos, int value){
     arr[pos] = value;
 }
 
-void deleteElement(int arr[], int &n; int pos){
+void deleteElement(int arr[], int &n, int pos){
     for(int i=pos; i < n-1; i++) arr[i] = arr[i+1];
     n--;
 }
+
 int main() {
     // Write C++ code here
     int arr[100], n=0;
     int choice, pos, value;
     do{
-        cout << "\n1.Insert\n2.Display\n3.Update\n4.Delete\n5.Exit";
+        cout << "\n1.Insert\n2.Display\n3.Update\n4.Delete\n5.Exit" << endl;
         cout << "Enter choice: ";
         cin >> choice;
         
